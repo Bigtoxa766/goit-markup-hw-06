@@ -57,7 +57,7 @@
         <section class="section section-hero">
           <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+            <button type="button" class="hero-btn main-btn" data-modal-open>Замовити послугу</button>
           </div>
         </section>
       <section class="section section-advantage">
@@ -415,6 +415,17 @@
             </li>
           </ul>
         </div>
+        <div class="mailing-block">
+          <p class="mailing-text">Підпишіться на розсилку</p>
+          <form class="mailing-form">
+            <div class="mailing-group">
+              <input class="mailing-inp" type="email" id="mailing" placeholder=" ">
+              <label class="mailing-label" for="mailing">E-mail</label>
+            </div>
+            <button class="mailing-btn main-btn" type="submit">Підписатися</button>
+          </form>
+          
+        </div>
       </div>
     </footer>
     <!-- Modal Window -->
@@ -460,7 +471,15 @@
               <textarea class="form-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
               <label class="form-label comment" for="comment">Коментар</label>
             </div>
+            <div class="checkbox-group">
+                <input id="checkbox" class="checkbox" type="checkbox" name="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="check-link" href=""> Умови договору</a>
+                </label>
+            </div>
           </form>
+          <button class="submit-btn main-btn" type="submit">Відправити</button>
         </div>
       </div>
     </div>
