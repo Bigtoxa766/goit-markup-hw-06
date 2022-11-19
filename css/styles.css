@@ -945,7 +945,7 @@ Form
   .check-link{
     color: var(--accent-color);
     display: inline-block;
-    
+    text-underline-offset: 2px;
   }
 
     /* .checkbox-icon{
