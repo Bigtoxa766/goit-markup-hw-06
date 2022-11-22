@@ -72,7 +72,7 @@ header{
 .header-logo{
   margin-right: 93px;
 }
-.logo-accent{
+.logo__accent{
 color: var(--accent-color)
 }
 .site-nav{
@@ -201,8 +201,11 @@ color: var(--accent-color)
 .hero-btn:focus{
   background-color: #188CE8;
 }
-/* ---------------advantage--------------- */
 
+/* ===================
+advantage
+======================
+ */
 
 .visually-hidden{
   position: absolute;
@@ -216,24 +219,24 @@ color: var(--accent-color)
     clip-path: inset(50%);
     margin: -1px;
 }
-.section-advantage{
+.advantage-section{
   padding-top: 94px;
   padding-bottom: 118px;
 }
-.advantage {
+.advantage__list {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
   /* margin: auto ; */
 }
-.advantage-list {
+.advantage__item {
   flex-basis: calc((100% - 30px * 3) / 4);
 }
 /* .advantage-list:not(:last-child){
   margin-right: 30px;
 } */
-.advantage-title{
+.advantage__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -241,24 +244,30 @@ color: var(--accent-color)
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.advantage-text{
+.advantage__text{
     width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-.box{
+.advantage__box{
   padding: 25px 102px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
 }
-/* --------------------work---------------------- */
-.section-work{
+
+/* 
+================================
+work
+================================
+ */
+
+.work-section{
   padding-bottom: 94px;
 }
-.work{
+.work__list{
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -267,15 +276,13 @@ color: var(--accent-color)
 /* .work-list:not(:last-child){
   margin-right: 30px;
 } */
-.work-list{
+.work__item{
   margin: auto;
   flex-basis: calc((100% - 30px * 2) / 3);
   position: relative;
 }
-/* .work-img{
-  position: relative;
-} */
-.work-text{
+
+.work__text{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -297,18 +304,13 @@ color: var(--accent-color)
   background-color: rgba(47, 48, 58, 0.8);
 }
 /* -----------------------team------------------- */
-.team{
+.team-list{
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
 }
-.social-list{
-  list-style: none;
-  display: flex;
-}
-
-.section-team {
+.team-section {
   background-color: var(--secondary-bgc);
 
   max-width: 1600px;
@@ -316,7 +318,7 @@ color: var(--accent-color)
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-title{
+.section__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -325,10 +327,10 @@ color: var(--accent-color)
     margin-bottom: 50px;
     margin-bottom: 50px;
 }
-.team-img {
+.team__img {
   margin-bottom: 30px;
 }
-.team-wrapper{
+.team__wrapper{
   margin-bottom: 30px;
 }
 .social-link{
@@ -344,7 +346,7 @@ color: var(--accent-color)
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon-list{
+.social-list--white{
   list-style: none;
   display: flex;
   justify-content: center;
@@ -357,7 +359,7 @@ color: var(--accent-color)
   background-color: var(--accent-color);
 
 }
-.team-title{
+.team__title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -365,14 +367,14 @@ color: var(--accent-color)
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
-.team-text{
+.team__text{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-.team-list{
+.team-list__item{
   /* width: 270px; */
 
   flex-basis: calc((100%-30px * 3) / 4);
@@ -430,7 +432,12 @@ color: var(--accent-color)
   fill: var(--accent-color);
   
 }
-/* --------------------footer------------------ */
+/* 
+========================================
+footer
+========================================
+ */
+
 .footer-container{
   display: flex;
   align-items: baseline;
@@ -439,7 +446,7 @@ color: var(--accent-color)
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-footer {
+.logo--footer {
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -509,7 +516,7 @@ color: var(--accent-color)
 .footer-link:focus{
   background-color: var(--accent-color);
 }
-.footer-list{
+.social-list--dark{
   list-style: none;
   display: flex;
   justify-content: center;
@@ -518,6 +525,12 @@ color: var(--accent-color)
 .footer-icon{
   fill: var(--main-background-color);
 }
+
+/* 
+===============================
+mailing form
+=============================== 
+*/
 
 .mailing-form{
   display: flex;
